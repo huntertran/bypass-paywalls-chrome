@@ -1,2 +1,10 @@
-- name: Fork Sync
-  uses: tgymnich/fork-sync@v1.2.1
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Fork Sync
+    steps:
+      - uses: tgymnich/fork-sync@v1.2.1
